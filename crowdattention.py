@@ -39,8 +39,8 @@ class CrowdAttentionLayer(Layer):
 class CrowdAttentionLoss(Loss):
     def __init__(
         self,
-        K: int = K,
-        R: int = R,
+        K: int = 0,
+        R: int = 0,
     ) -> None:
         super().__init__()
         self.K = K
