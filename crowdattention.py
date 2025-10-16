@@ -1,3 +1,7 @@
+from tensorflow.keras.layers import Input, Dense, Lambda, Layer, Reshape
+from tensorflow.keras.models import Model
+from tensorflow.keras.losses import Loss, CategoricalCrossentropy
+
 class CrowdAttentionLayer(Layer):
     def __init__(self, K, R, **kwargs):
         super(CrowdAttentionLayer, self).__init__(**kwargs)
