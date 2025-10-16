@@ -3,7 +3,7 @@ from tensorflow.keras.models import Model
 from tensorflow.keras.losses import Loss, CategoricalCrossentropy
 
 class CrowdAttentionLayer(Layer):
-    def __init__(self, K, R, **kwargs):
+    def __init__(self, K=0, R=0, **kwargs):
         super(CrowdAttentionLayer, self).__init__(**kwargs)
         self.R = R # Number of annotators.
         self.K = K # Number of classes.
