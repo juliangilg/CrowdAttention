@@ -1,6 +1,7 @@
 from tensorflow.keras.layers import Input, Dense, Lambda, Layer, Reshape
 from tensorflow.keras.models import Model
 from tensorflow.keras.losses import Loss, CategoricalCrossentropy
+import tensorflow as tf
 
 class CrowdAttentionLayer(Layer):
     def __init__(self, K=0, R=0, **kwargs):
